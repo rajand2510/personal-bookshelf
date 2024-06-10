@@ -1,0 +1,20 @@
+/* src/pages/BookSearch.css */
+.book-search {
+    position: relative; /* Set container as relative */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .bookshelf-link {
+    position: absolute; /* Position bookshelf link absolutely */
+    top: 20px; /* Distance from top */
+    right: 20px; /* Distance from right */
+    color: #007bff; /* Link color */
+    text-decoration: none;
+  }
+  
+  .bookshelf-link:hover {
+    text-decoration: underline; /* Underline link on hover */
+  }
+  

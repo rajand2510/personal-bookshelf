@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+/* src/App.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #222; /* Dark background color */
+  color: #fff; /* Text color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* src/pages/BookSearch.css */
+.book-search {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline link on hover */
+}
+
+/* src/components/SearchBar.css */
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px;
+  background-color: #fff; /* White background color */
+}
+
+.search-bar input[type="text"] {
+  width: calc(100% - 40px);
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  width: 40px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  cursor: pointer;
+}
+
+/* src/components/BookCard.css */
+.book-card {
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); /* Box shadow for glass effect */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.book-card:hover {
+  transform: translateY(-5px); /* Lift the card slightly on hover */
+}
+
+.book-title {
+  font-size: 1.5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.book-author {
+  font-size: 1rem;
+  color: white;
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* src/components/Loader.css */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey border */
+  border-top: 16px solid #3498db; /* Blue border for loader */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite; /* Animation for spinning loader */
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* src/components/Popup.css */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #333; /* Dark grey background color */
+  color: #fff; /* Text color */
+  z-index: 9999;
 }

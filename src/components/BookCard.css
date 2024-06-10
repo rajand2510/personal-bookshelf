@@ -1,0 +1,40 @@
+/* src/components/BookCard.css */
+.book-card {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange content vertically */
+  align-items: center; /* Center content horizontally */
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); /* Box shadow for glass effect */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  overflow: hidden; /* Prevent content overlap */
+  margin: 20px; /* Add margin between cards */
+}
+
+.book-card:hover {
+  transform: translateY(-5px); /* Lift the card slightly on hover */
+}
+
+.book-icon {
+  margin-bottom: 10px; /* Add margin below the icon */
+}
+
+.book-content {
+  text-align: center;
+  z-index: 1;
+}
+
+.book-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.book-author {
+  font-size: 1rem;
+  color: white;
+  opacity: 0.8;
+}

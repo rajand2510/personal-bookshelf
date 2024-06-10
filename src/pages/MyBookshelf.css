@@ -1,0 +1,20 @@
+/* src/pages/MyBookshelf.css */
+.my-bookshelf {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .my-bookshelf-title {
+    margin-bottom: 20px;
+  }
+  
+  .my-bookshelf-link {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+  }
+  
+  .my-bookshelf-link:hover {
+    text-decoration: underline; /* Underline link on hover */
+  }
+  
